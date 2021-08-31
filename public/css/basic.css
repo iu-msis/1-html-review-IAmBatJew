@@ -1,0 +1,60 @@
+.thumbnail 
+{
+    border: 6px solid navy;
+    padding: 3px;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  } /*Source: w3schools.com */
+
+  #name
+  {
+      font-size: x-large;
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  #sourcing
+  {
+      color: navy;
+      font-size: x-small;
+  }
+
+  #nav
+  {
+      padding-right: 0px;
+      align-content:right;
+  }
+
+  body{
+      background-color: #0E86D4;
+      padding-left: 10px;
+      color:navy;
+  }
+  
+  a{
+      color:white;
+  }
+
+  header{
+      background-color: turquoise;
+      color:violet;
+      height:27px;
+  }
+
+
+  th{
+    color: white;
+  }
+
+  td
+  {
+      border: 9px solid turquoise;
+      color: black;
+  }
+
+  input{
+      background-color: gray;
+  }
