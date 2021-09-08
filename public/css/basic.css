@@ -16,6 +16,11 @@
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
+  .navigate
+  {
+      width: 25%;
+  }
+
   #sourcing
   {
       color: navy;
@@ -24,13 +29,15 @@
 
   #nav
   {
-      padding-right: 0px;
-      align-content:right;
+      margin: 0px;
+      align-items: left;
+      align-content: left;
+      align-self: left;
   }
 
   body{
-      background-color: #0E86D4;
-      padding-left: 10px;
+      background-color: yellowgreen;
+      margin-left: 3px;
       color:navy;
   }
   
@@ -42,6 +49,7 @@
       background-color: turquoise;
       color:violet;
       height:27px;
+      width: 50%;
   }
 
 

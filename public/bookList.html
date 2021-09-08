@@ -6,9 +6,9 @@
   <link rel="stylesheet" href="css/basic.css">
 </head>
 <body>
-  <nav class="navbar navbar-light bg-dark" id="nav"><a href="index.html">Index</a> <a href="aboutMe.html">About Me</a> <a href="bookList.html">My Book List</a></nav>
- <head><b>My Favorite Books</b></head>
-<p> <table class="table table-bordered">
+  <div class="navigate"><nav class="navbar navbar-light bg-dark" id="nav"><a href="index.html">Index</a> <a href="aboutMe.html">About Me</a> <a href="bookList.html">My Book List</a></nav></div><br>
+ <header><b>My Favorite Books</b></header>
+    <table class="table table-bordered">
     <tr>
         <th>Title</th>
         <th>Author</th>
@@ -53,21 +53,29 @@
 <br>
 <form>
      <div class="form-row">
-        <div class="form-group col-md-5">
+        <div class="col-md-6">
             <input class="form-control" type="text" placeholder="Book Title">
         </div>
-        <div class="form-group col-md-5">
+        <div class="col-md-6">
             <input class="form-control" type="text" placeholder="Author">
         </div>
     </div>
     <div class="form-row">
-        <div class="form-group col-md-2"><input class="form-control" type="text" placeholder="Publication Year"></div>
-        <div class="form-group col-md-4"><input class="form-control" type="text" placeholder="Publication Company"></div>
-        <div class="form-group col-md-2"><input class="form-control" type="text" placeholder="Page Count"></div>
-        <div class="form-group col-md-2"><input class="form-control" type="text" placeholder="Sales Price"></div>
+        <div class="col-md-2">
+            <input class="form-control" type="text" placeholder="Publication Year">
+        </div>
+        <div class="col-md-4">
+            <input class="form-control" type="text" placeholder="Publication Company">
+        </div>
+        <div class="col-md-2">
+            <input class="form-control" type="text" placeholder="Page Count">
+        </div>
+        <div class="col-md-2">
+            <input class="form-control" type="text" placeholder="Sales Price">
+        </div>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button> <!source getbootstrap.com>
+    <button type="submit" class="btn btn-primary">Submit</button> 
+    <!source bootstrap.com>
 </form>
-</p>
 </body>
 </html>
