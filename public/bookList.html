@@ -4,12 +4,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <title>Who I Is</title>
   <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/tablesort.css" />
+  <!http://tristen.ca/tablesort/demo/>
+    <script src="js/tablesort.min.js"></script>
 </head>
 <body>
   <div class="navigate"><nav class="navbar navbar-light bg-dark" id="nav"><a href="index.html">Index</a> <a href="aboutMe.html">About Me</a> <a href="bookList.html">My Book List</a></nav></div><br>
  <header><b>My Favorite Books</b></header>
-    <table class="table table-bordered">
-    <tr>
+    <table id="bookTable" class="table table-bordered">
+    <tr data-sort-method="none">
         <th>Title</th>
         <th>Author</th>
         <th>Year Published</th>
@@ -51,6 +54,9 @@
     </tr>
 </table>
 <br>
+<script>
+    new Tablesort(document.getElementById('bookTable'));
+  </script>
 <form>
      <div class="form-row">
         <div class="col-md-6">
