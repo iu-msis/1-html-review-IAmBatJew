@@ -14,8 +14,8 @@
 <a v-bind:href="result.picture.large"><img v-bind:src=result.picture.thumbnail class="thumbnail" /></a><p id="sourcing">Source: randomUser.me</p><br>
 <p id=name> {{ result.name.first }} {{ result.name.last }} </p>
 <br>
-<p>Hailing from: {{ result.location.city }}, {{ result.location.state }} {{ result.location.country }}<br><br>
-  Birthdate: {{ result.dob.date }} <br><br>
+<p>Hailing from: {{ result.location.city }}, {{ result.location.state }} - {{ result.location.country }}<br><br>
+  Birthdate: {{ date }} <br><br>
   Age: {{ result.dob.age }} <br><br>
   Email: <a v-bind:href= "'mailto:' + result.email">{{ result.email }}</a>
 </p>
