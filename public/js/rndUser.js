@@ -14,6 +14,17 @@ const rndUser = {
         }
     },
     
+    computed: {
+        prettyBirthday() {
+            return dayjs(this.result.dob.date)
+            .format('D MMM YYYY')
+        }
+    },
+
+    methods: {
+
+    },
+
     created() {
     fetch('https://randomuser.me/api')
     
