@@ -37,9 +37,9 @@
         <th>Page Count</th>
         <th>MSRP</th>
     </tr>
-    <tr class="bg-success">
-        <td><i>Lord of the Rings</i></td>
-        <td>J.R.R. Tolkien</td>
+    <tr v-for="book in books" class="bg-success">
+        <td><i>{{ book.title }}</i></td>
+        <td>{{ book.author }}</td>
         <td>1954</td>
         <td>Allen & Unwin</td>
         <td>1178</td>
