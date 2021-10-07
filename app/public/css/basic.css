@@ -9,6 +9,10 @@
     right: 16px;
   } /*Source: w3schools.com */
 
+.trythis {
+    background-color: darkred;
+}
+
   #name
   {
       font-size: x-large;
@@ -55,6 +59,12 @@
 
   th{
     color: white;
+    background-color:brown;
+  }
+
+  .header {
+      color: white;
+      background-color:brown;
   }
 
   td

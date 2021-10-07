@@ -1,9 +1,7 @@
 const Offer = {
     data() {
         return {
-            "books": [],
-            selectedStudent: null,
-            "offers": []
+            "books": []
         }
     },
 
@@ -55,8 +53,9 @@ const Offer = {
     },
 
     created() {
-        this.fetchStudentData();
+        this.fetchBookData();
     }
 }
+
 
 Vue.createApp(Offer).mount('#offerApp')
