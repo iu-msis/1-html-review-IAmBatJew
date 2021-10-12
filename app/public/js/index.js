@@ -1,7 +1,8 @@
 const Offer = {
     data() {
         return {
-            "books": []
+            "books": [],
+            bookForm: {}
         }
     },
 
@@ -49,7 +50,31 @@ const Offer = {
     
                     console.error(err);
             })
-        }
+        },
+
+        postNewBook(evt) {
+
+            this.bookForm.id = this.selectedBook.id;
+            console.log("Posting:", this.bookForm);
+            // alert("Posting!");
+    
+            fetch('api/bookList/create.php', {
+                method:'POST',
+                body: JSON.stringify(this.bookForm),
+                headers: {
+                    "content-Type": "application/json; charset=utf-8"
+                }
+            })
+            .then( response => response.json() )
+            .then ( json => {
+                console.log("Returned from post:", json);
+                //TODO: test a result was returned!
+                this.books = json;
+    
+                //Reset the form
+                this.bookForm = {};
+            });
+        },
     },
 
     created() {

@@ -88,37 +88,45 @@
       -->
   </tbody>
 </table>
+
+<form v-on:submit.prevent="postNewBook">
+  <div class="form-row">
+     <div class="col-md-6">
+       <label for="bookTitle">Book Title</label>
+         <input class="form-control" type="text" id="bookTitle" placeholder="Book Title" v-model="bookForm.title">
+     </div>
+     <div class="col-md-6">
+       <label for="author">Author</label>
+         <input class="form-control" id="author" v-model="bookList.author" type="text" placeholder="Author">
+     </div>
+ </div>
+ <div class="form-row">
+     <div class="col-md-2">
+       <label for="pubYear">Publication Year/label>
+         <input class="form-control" id="pubYear" v-model="bookList.publicationYear" type="text" placeholder="Publication Year">
+     </div>
+     <div class="col-md-4">
+       <label for="publisher">Publisher</label>
+         <input class="form-control" id="publisher" v-model="bookList.publisher" type="text" placeholder="Publication Company">
+     </div>
+     <div class="col-md-2">
+       <label for="pageCount">Page Count</label>
+         <input class="form-control" id="pageCount" v-model="bookForm.pageCount" type="text" placeholder="Page Count">
+     </div>
+     <div class="col-md-2">
+       <label for="salesPrice">Sales Price</label>
+         <input class="form-control" id="salesPrice" type="text" placeholder="Sales Price" v-model="bookForm.msrp">
+     </div>
+ </div>
+ <button type="submit" class="btn btn-primary">Submit</button> 
+ <!--source bootstrap.com-->
+</form>
+
 </div>
 <br>
 <script>
     new Tablesort(document.getElementById('bookTable'));
   </script>
-<form>
-     <div class="form-row">
-        <div class="col-md-6">
-            <input class="form-control" type="text" placeholder="Book Title">
-        </div>
-        <div class="col-md-6">
-            <input class="form-control" type="text" placeholder="Author">
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-2">
-            <input class="form-control" type="text" placeholder="Publication Year">
-        </div>
-        <div class="col-md-4">
-            <input class="form-control" type="text" placeholder="Publication Company">
-        </div>
-        <div class="col-md-2">
-            <input class="form-control" type="text" placeholder="Page Count">
-        </div>
-        <div class="col-md-2">
-            <input class="form-control" type="text" placeholder="Sales Price">
-        </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button> 
-    <!source bootstrap.com>
-</form>
 <script src="js/index.js"></script>
 </body>
 </html>
