@@ -53,8 +53,7 @@ const Offer = {
         },
 
         postNewBook(evt) {
-
-            this.bookForm.id = this.selectedBook.id;
+            
             console.log("Posting:", this.bookForm);
             // alert("Posting!");
     
