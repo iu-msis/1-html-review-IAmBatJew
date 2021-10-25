@@ -51,6 +51,11 @@
             <td>{{ book.publisher }}</td>
             <td>{{ book.pageCount }}</td>
             <td>{{ prettyDollar(book.msrp) }}</td>
+            <td>
+              <button type="button" class="btn btn-outline-secondary btn-sm" v-on:click="selectBook(book)">Edit</button>
+              <button type="button" class="btn btn-outline-secondary btn-sm" 
+              v-on:click="postDeleteBook(book)" >Delete</button>
+            </td>
         </tr>
        <!-- 
         <tr class="trythis" v-if="books.length">
@@ -89,6 +94,7 @@
   </tbody>
 </table>
 
+<h3>{{selectedOffer === null ? "Add" : "Edit" }}</h3>
 <form v-on:submit.prevent="postNewBook">
   <div class="form-row">
      <div class="col-md-6">
@@ -118,9 +124,12 @@
          <input class="form-control" id="salesPrice" type="double" placeholder="Sales Price" v-model="bookForm.msrp">
      </div>
  </div>
- <button type="submit" class="btn btn-primary">Submit</button> 
- <!--source bootstrap.com-->
+  <button type="submit" class="btn btn-primary">{{selectedOffer === null ? "Add" : "Edit" }}</button>
+  <button type="button" class="btn btn-outline-secondary" 
+  v-if="selectedBook"
+  v-on:click="resetBookForm">Cancel</button>
 </form>
+
 
 </div>
 <br>
