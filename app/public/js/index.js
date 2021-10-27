@@ -40,7 +40,7 @@ const Offer = {
 
         postNewBook(evt) {
             if(this.selectedBook === null) {
-                this.postNewBook(evt);
+                this.postANewBook(evt);
             } else {
                 this.postUpdateBook(evt);
             }
@@ -121,7 +121,7 @@ const Offer = {
             });
         },
 
-        postNewBook(evt) {
+        postANewBook(evt) {
             
             console.log("Posting:", this.bookForm);
             // alert("Posting!");
