@@ -29,8 +29,8 @@
             </li>
           </ul>
         </div>
-      </nav><br>
- <header><b>My Favorite Books</b></header><br>
+      </nav>
+ <header><h1><b>My Favorite Books</b></h1></header><br>
  <div id="offerApp" class="container">
     <table id="bookTable" class="table table-bordered">
       <thead>
@@ -41,6 +41,7 @@
             <th>Publisher</th>
             <th>Page Count</th>
             <th>MSRP</th>
+            <th>Edit/Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -94,7 +95,7 @@
   </tbody>
 </table>
 
-<h3>{{selectedOffer === null ? "Add" : "Edit" }}</h3>
+<h3>{{selectedBook === null ? "Add" : "Edit" }}</h3>
 <form v-on:submit.prevent="postNewBook">
   <div class="form-row">
      <div class="col-md-6">
@@ -123,8 +124,8 @@
        <label for="salesPrice">Sales Price</label>
          <input class="form-control" id="salesPrice" type="double" placeholder="Sales Price" v-model="bookForm.msrp">
      </div>
- </div>
-  <button type="submit" class="btn btn-primary">{{selectedOffer === null ? "Add" : "Edit" }}</button>
+ </div> <br>
+  <button type="submit" class="btn btn-primary">{{selectedBook === null ? "Add" : "Edit" }}</button>
   <button type="button" class="btn btn-outline-secondary" 
   v-if="selectedBook"
   v-on:click="resetBookForm">Cancel</button>
