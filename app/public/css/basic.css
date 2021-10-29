@@ -1,78 +1,68 @@
+body{
+    background-color: #FFEC67;
+    margin-left: 3px;
+    color:#95998A;
+}
+
+a{
+    color:white;
+}
+
+header{
+    color: #FFFFFF;
+    background-color:#BDCC94;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+.header {
+    color: black;
+    background-color:#95998A;
+}
+
+td
+{
+    border: 9px solid turquoise;
+    color: black;
+}
+
+input{
+    background-color: gray;
+}
+
+table.table tr:nth-child(even) td {
+  background-color: #A9B6CC;
+}
+
+table.table tr:nth-child(odd) td {
+    background-color: #BDCC94;
+  }
+
 .thumbnail 
 {
     border: 6px solid navy;
     padding: 3px;
 }
-.bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-  } /*Source: w3schools.com */
 
-.trythis {
-    background-color: darkred;
+.btn-outline-secondary {
+    background-color: #FFFFFF;
 }
-
-  #name
-  {
-      font-size: x-large;
-      color: white;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
 
   .navigate
   {
       width: 25%;
   }
 
+  #name
+  {
+      font-size: x-large;
+      color: #A9B6CC;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
   #sourcing
   {
       color: navy;
       font-size: x-small;
-  }
-
-  #nav
-  {
-      margin: 0px;
-      align-items: left;
-      align-content: left;
-      align-self: left;
-  }
-
-  body{
-      background-color: yellowgreen;
-      margin-left: 3px;
-      color:navy;
-  }
-  
-  a{
-      color:white;
-  }
-
-  header{
-      background-color: turquoise;
-      color:violet;
-      height:27px;
-      width: 50%;
-  }
-
-
-  th{
-    color: white;
-    background-color:brown;
-  }
-
-  .header {
-      color: white;
-      background-color:brown;
-  }
-
-  td
-  {
-      border: 9px solid turquoise;
-      color: black;
-  }
-
-  input{
-      background-color: gray;
   }
